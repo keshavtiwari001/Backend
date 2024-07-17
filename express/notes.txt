@@ -1,0 +1,48 @@
+// Server -> server ek sys hai jo hume response provide karti hai on our any request.
+response -> ans. | request -> ques.
+sys -> os | 
+
+computer ek device hai lekin in device par os installed hai
+terminal jo milta hai vo actually mai sys ke sath communicate karane wala hai 
+terminal -> cli
+i-> interface -> where we can do interaction 
+cl -> command line
+vahi par jo gui hai -> graphic user interfacef
+
+webapplication -> sys
+-> frnotend-> gui 
+-> ,backend -> cli
+-> ,database ->  disk(memory, harddisk)
+
+webapplication ke sath interaction karne ka tarika -> frnotend,backend
+what is the difference between server and systerm 
+
+// server bhi ek sys hai ek esa sys jo hamesha responsible ho apke request par response dene ke liye at any physical atmosphere. or usme internet access ho to vo server ban jayegi. ek active system hi server hai.
+
+//what is https or http ->
+hyper text transfer protocol secure - https
+hyper text transfer protocol - http
+protocol set of rule.
+data pass hoga across the origin
+
+kisi user ne agar server par request ki hai to server ka interaction apne ap me kuch status codes ki  daya kiya jata hai 
+
+200 - successfull res.
+300 - re-request
+400 - bad request from user side / clint side / frnotend side
+500 - server side error backend / config routes
+
+json formate me request kiya jata hai , response bhi json me hota hai 
+
+application programming interface -> api ke through ye request ya response handle kiya jata hai.
+
+request listen = server
+response bhejna = server
+request jaha par li jayegi -> client side / browser / ( postmen, thunderclient )
+request le jane ka kaam -> api
+request le aane ka kaam -> api
+
+
+data packet ke andar ddaal kar json ko bhej sakte hai agar format xml hui to use SOAP kahte hai 
+agar vohi stateless hoti hai to use REST api bolte hai
+SOAP -> simple object access protocol
