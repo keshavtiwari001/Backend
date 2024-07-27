@@ -1,0 +1,15 @@
+// HTTP METHODS->
+get -> any info that is served by the server
+post -> any info that is taken from frontend by the server
+put -> any info updated by the server to the frontend
+delete -> any info that is deleted by the server
+patch - > not any info that is specific info updated by the server to the frontend
+
+
+these all things - > browser prospective.
+
+app.use() -> it takes only one para. 
+app.get() -> it takes two para. -> 1st is route(path modules) and 2nd is controllers(it is a function that we continue latter) 
+ 
+ # path modules
+ 
