@@ -1,0 +1,39 @@
+/* Style for the stopwatch container */
+#stopwatch {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Style for the buttons */
+button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Style for the buttons on hover */
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Center the buttons */
+button#start,
+button#stop,
+button#reset {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style for the display area (minutes, seconds, milliseconds) */
+span {
+    font-weight: bold;
+    color: #333;
+}

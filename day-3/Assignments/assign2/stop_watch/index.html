@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="stopwatch">
+        <span id="minutes">00</span>:<span id="seconds">00</span>.<span id="milliseconds">000</span>
+    </div>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <button id="reset">Reset</button>
+
+    <script>
+        let startTime;
+        let intervalId;
+
+        const minutesDisplay = document.getElementById('minutes');
+        const secondsDisplay = document.getElementById('seconds');
+        const millisecondsDisplay = document.getElementById('milliseconds');
+
+        function updateTimer() {
+            const currentTime = Date.now();
+            const elapsedTime = currentTime - startTime;
+
+            const minutes = Math.floor(elapsedTime / 60000);
+            const seconds = Math.floor((elapsedTime % 60000) / 1000);
+            const milliseconds = elapsedTime % 1000;
+
+            minutesDisplay.textContent = minutes.toString().padStart(2, '0');
+            secondsDisplay.textContent = seconds.toString().padStart(2, '0');
+            millisecondsDisplay.textContent = milliseconds.toString().padStart(3, '0');
+        }
+
+        document.getElementById('start').addEventListener('click', () => {
+            startTime = Date.now();
+            intervalId = setInterval(updateTimer, 10); // Update every 10 milliseconds
+        });
+
+        document.getElementById('stop').addEventListener('click', () => {
+            clearInterval(intervalId);
+        });
+
+        document.getElementById('reset').addEventListener('click', () => {
+            clearInterval(intervalId);
+            minutesDisplay.textContent = '00';
+            secondsDisplay.textContent = '00';
+            millisecondsDisplay.textContent = '000';
+        });
+    </script>
+</body>
+</html>

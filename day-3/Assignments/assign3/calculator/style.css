@@ -1,0 +1,126 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    border-radius: 10px 10px 5px 5px;
+    background-color: rgb(240, 239, 239);
+    box-shadow: 0px 0px 20px rgb(122, 122, 122);
+    height: 580px;
+    width: 350px;
+    padding: 20px 0px 15px 0px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+.display{
+    width: 95%;
+    height: 150px;
+    margin: 10px 0px;
+    padding: 0px 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: right;
+    font-size: 50px;
+    font-family: 'Scientific Calculator LCD', sans-serif;
+}
+/* main div of uppar btns */
+.upparBtn{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* 1-9-0 btn */
+.calBtns{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbers{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 1px solid rgb(212, 212, 212);
+}
+
+.calBtns{
+    height: 300px;
+    width: 95%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+.operators{
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.OpeBtn{
+    background-color :rgb(255, 246, 228)
+}
+
+.NumBtn,.OpeBtn,.clearBtn,.equalBtn{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(100, 100, 100);
+    width: 60px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.NumBtn:hover,.OpeBtn:hover,.equalBtn:hover,.clearBtn:hover{
+    box-shadow: 0px 0px 2px rgb(141, 141, 141);
+}
+
+.impBtn{
+    height: 15%;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 60px;
+    border-radius: 5px;
+}
+.clearBtn{
+    margin: 0px 0px 0px 20pz;
+    padding: 10px 5px;
+    font-size: 15px;
+    background-color: rgb(255, 228, 228);
+}
+.equalBtn{
+    width: 200px;
+    margin: 0px 10px 0px 20px;
+    background-color: rgb(230, 255, 228);
+}
+
+/* mode */
+.mode{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    position: absolute;
+    /* bottom: 20px; */
+    top: 50%;
+    left: 30%;
+    border: none;
+    /* background-color: rgb(207, 207, 207); */
+    background-color: rgba(68, 68, 68, 0.5);
+}

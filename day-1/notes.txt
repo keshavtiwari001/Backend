@@ -1,0 +1,45 @@
+1. Creating a Basic Server :
+Objective: Set up a simple Express server that responds with "Hello World" when accessed.
+Steps:
+·        Install Express.js.
+·        Create a basic server.
+·        Set up a route that responds with "Hello World".
+
+------------ ------------ ------------ ------------
+
+Certainly! Let’s dive into Express.js, the popular web framework for Node.js. 🚀
+
+What is Express.js?
+Express.js is a powerful web application framework built upon Node.js. Think of it as the Swiss Army knife for web servers! Here are some key points:
+
+Built on Node.js: Node.js is fantastic for building networking services and applications. Express takes Node’s features and provides an easy-to-use framework specifically tailored for web servers.
+Web Server Use-Case: Express is designed to handle the needs of web servers. It’s open source, free, and highly performant.
+Extensible: You can easily extend Express by adding pre-built packages (middleware) to handle various tasks. These packages cover everything from routing to handling cookies and serving static assets.
+How It Works
+Let’s break down a simple example:
+
+JavaScript
+
+const express = require('express');
+const app = express();
+
+// Define a route for the root path ('/')
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+
+// Start the server on port 3000
+app.listen(3000, () => {
+    console.log('Server ready');
+});
+
+
+Importing Express: We import the express package and create an application instance using express().
+Routing: The app.get('/', ...) line defines a route for the root path (‘/’). When a client sends a GET request to ‘/’, our callback function executes and responds with ‘Hello World!’.
+Listening: Finally, we start the server by calling app.listen(3000, ...). It listens on port 3000, and the callback logs a message when the server is ready.
+HTTP Verbs (Methods)
+Express provides methods for different HTTP verbs (GET, POST, PUT, DELETE, PATCH). In our example, we used app.get(...) to handle GET requests. You can similarly use app.post(...), app.put(...), and so on.
+
+The listen Method
+The app.listen(port, callback) method starts the server and listens on the specified port. When a request arrives, Express routes it to the appropriate handler based on the URL path.
+

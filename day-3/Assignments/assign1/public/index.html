@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(246, 241, 255);
+        }
+        button{
+            padding: 30px 60px;
+            font-size: 32px;
+            color:  rgb(66, 66, 66);
+            background-color: rgb(205, 233, 250);
+            border: 1px solid rgb(89, 117, 255);
+            border-radius: 5%;
+            
+        }
+    </style>
+</head>
+<body>
+        <button id="btn">0</button>
+    
+    <script>
+        let count = 0
+        let btn = document.getElementById('btn')
+        document.querySelector('button').onclick = ()=>{
+            count ++
+            btn.innerHTML = count
+        }
+
+    </script>
+
+
+</body>
+</html>

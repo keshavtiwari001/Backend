@@ -1,0 +1,29 @@
+3.Serving Static HTML Pages
+
+Objective: Serve a static HTML page from an Express server.
+
+Steps:
+
+·        Create a simple HTML page.
+
+·        Set up Express to serve this HTML page on a specific route.
+
+1)button click - done
+
+2)stopwatch - done
+
+3)calculator - done
+
+4)digital clock
+
+5)to do list
+
+6)weather card
+
+7)profile card
+
+8)portofilo page
+
+9)bulb toggle
+
+10.)Sign-Up Page

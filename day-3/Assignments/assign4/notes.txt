@@ -1,0 +1,37 @@
+2. Serving JSON Data
+Objective: Serve a JSON file through a specific route.
+Steps:
+·        Create a JSON file with sample data.
+·        Set up a route to serve this JSON file when accessed.
+
+------------ ------------ ------------ ------------
+
+🚀 Serving JSON Data with Express.js
+
+Objective: Serve a JSON file through a specific route.
+
+Steps:
+
+Create a JSON File: Begin by creating a JSON file (e.g., data.json) containing sample data. This data could represent anything—product listings, user profiles, or even a list of favorite books.
+Set Up a Route in Express:
+In your Express application, define a route that will handle requests for your JSON data. For example:
+JavaScript
+
+const express = require('express');
+const app = express();
+
+// Assume your JSON data is stored in a variable called 'sampleData'
+const sampleData = require('./data.json');
+
+// Define a route to serve the JSON data
+app.get('/api/data', (req, res) => {
+    res.json(sampleData);
+});
+
+// Start the server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
+Access the Data:
+When you visit http://localhost:3000/api/data (assuming your server is running locally), Express will respond with the JSON data you’ve defined.
